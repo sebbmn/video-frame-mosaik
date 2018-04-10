@@ -7,7 +7,7 @@ let maxTime = 0;
 video.addEventListener('play', function() {
   isPlaying = true;
 });
-video.addEventListener('suspend', function() {
+video.addEventListener('pause', function() {
   isPlaying = false;
 });
 video.addEventListener('timeupdate', function() {

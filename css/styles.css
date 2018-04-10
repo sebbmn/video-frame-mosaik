@@ -9,13 +9,10 @@ body {
   width:58px;
   height: 58px;
   margin: -5px 0 0 -5px;
-  position: absolute;
+  
   box-shadow: 3px 4px 5px 0 #222222;
 }
 .thumbnail {
-  transition-property: width height;
-  transition-duration: 1s;
-  transition-timing-function: ease;
   width: 48px;
   width: 48px;
 }
