@@ -1,8 +1,11 @@
-.maincontent {
-  width: 600px;
+body {
   background-color: blueviolet;
+}
+.maincontent {
+  background-color:red;
+  width: 600px;
   margin: auto;
 }
 .video {
-  width: 100%;
+  width: 340px;
 }
