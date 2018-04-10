@@ -9,8 +9,8 @@ video.addEventListener('timeupdate', function() {
 
 function addThumbnail(currentTime) {
   let thumbnailCanvas = document.createElement("canvas");
-  thumbnailCanvas.width = 90;
-  thumbnailCanvas.height = 90;
+  thumbnailCanvas.width = 96;
+  thumbnailCanvas.height = 96;
   thumbnailCanvas.id = currentTime;
   thumbnailCanvas.className = "thumbnail";
   thumbnailCanvas.onclick = () => { 
@@ -18,7 +18,7 @@ function addThumbnail(currentTime) {
   };
 
   let context = thumbnailCanvas.getContext("2d");
-  context.drawImage(video,0,0,90,90);
+  context.drawImage(video,0,0,96,96);
   thumbnailsMosaik.appendChild(thumbnailCanvas);
 
   console.log(currentTime);
