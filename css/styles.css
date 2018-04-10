@@ -6,9 +6,9 @@ body {
   margin: auto;
 }
 .thumbnail:hover {
-  width:110px;
-  height: 110px;
-  margin: -10px 0 0 -10px;
+  width:58px;
+  height: 58px;
+  margin: -5px 0 0 -5px;
   position: absolute;
   box-shadow: 3px 4px 5px 0 #222222;
 }
