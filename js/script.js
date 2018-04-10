@@ -12,8 +12,10 @@ function addThumbnail(currentTime) {
   thumbnailCanvas.width = 90;
   thumbnailCanvas.height = 90;
   thumbnailCanvas.id = currentTime;
-  thumbnailCanvas = toVideoTime(currentTime);
   thumbnailCanvas.className = "thumbnail";
+  thumbnailCanvas.onclick = () => { 
+    video.currentTime = currentTime; 
+  };
 
   let context = thumbnailCanvas.getContext("2d");
   context.drawImage(video,0,0,90,90);
