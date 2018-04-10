@@ -8,8 +8,6 @@ clone this rep
 
 cd to the root directory
 
-with node
-
 with python
 
 `python -m SimpleHTTPServer 8000`
