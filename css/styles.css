@@ -6,7 +6,7 @@ body {
   margin: auto;
 }
 .thumbnail:hover {
-  transform: scale(1.3,1.3);
+  transform: scale(1.5,1.5);
   box-shadow: 10px 10px 91px 0px #222222;
   z-index:9999;
   cursor:pointer;

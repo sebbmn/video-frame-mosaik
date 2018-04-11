@@ -15,6 +15,7 @@ video.addEventListener('timeupdate', function() {
 
 }, false);
 
+// 23fps = 1 frame every 43.478 sec
 window.setInterval(function() {
   if(isPlaying) {
     if(video.currentTime > maxTime) {
@@ -22,7 +23,7 @@ window.setInterval(function() {
       addThumbnail(video.currentTime, 0);
     }
   }
-}, 50);
+}, 44); 
 
 function addThumbnail(currentTime, xStart) {
   let thumbnailCanvas = document.createElement("canvas");
