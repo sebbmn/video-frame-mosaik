@@ -17,3 +17,8 @@ This application is built using only standard Javascript/Html/Css.
 
   - If you have a Python Interpreter installed:  `python -m SimpleHTTPServer 8000`
   - If you use Visual studio Code, get the [live server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+  
+## Environment
+
+Only tested with Chrome Version 65.0.3325.181
+
