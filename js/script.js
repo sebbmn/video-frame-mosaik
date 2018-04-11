@@ -20,12 +20,12 @@ window.setInterval(function() {
   if(isPlaying) {
     if(video.currentTime > maxTime) {
       maxTime = video.currentTime;
-      addThumbnail(video.currentTime, 0);
+      addThumbnail(video.currentTime);
     }
   }
 }, 44); 
 
-function addThumbnail(currentTime, xStart) {
+function addThumbnail(currentTime) {
   let thumbnailCanvas = document.createElement("canvas");
   thumbnailCanvas.width = 48;
   thumbnailCanvas.height = 48;
@@ -33,12 +33,13 @@ function addThumbnail(currentTime, xStart) {
   let context = thumbnailCanvas.getContext("2d");
   context.filter = `hue-rotate(${hueVariation}deg)`;
   hueVariation +=1;
-  context.drawImage(video,xStart,0,400,400,0,0,48,48);
+  context.drawImage(video,0,0,400,400,0,0,48,48);
   
   dataUrl = thumbnailCanvas.toDataURL();
   thumbnailImage = document.createElement('img');
   thumbnailImage.src = dataUrl;
   thumbnailImage.className = "thumbnail";
+  thumbnailImage.id = currentTime;
 
   thumbnailImage.onclick = () => { 
     video.currentTime = currentTime; 
