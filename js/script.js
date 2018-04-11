@@ -32,15 +32,15 @@ function addThumbnail(currentTime) {
   hueVariation +=1;
   context.drawImage(video,280,0,400,400,0,0,48,48);
   
-  dataUrl = thumbnailCanvas.toDataURL();
-  thumbnailImage = document.createElement('img');
-  thumbnailImage.src = dataUrl;
-  thumbnailImage.className = "thumbnail";
-  thumbnailImage.id = currentTime;
+  //dataUrl = thumbnailCanvas.toDataURL();
+  //thumbnailImage = document.createElement('img');
+  //thumbnailImage.src = dataUrl;
+  thumbnailCanvas.className = "thumbnail";
+  //thumbnailImage.id = currentTime;
 
-  thumbnailImage.onclick = () => { 
+  thumbnailCanvas.onclick = () => { 
     video.currentTime = currentTime; 
   };
 
-  thumbnails.appendChild(thumbnailImage);
+  thumbnails.appendChild(thumbnailCanvas);
 }
