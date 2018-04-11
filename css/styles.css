@@ -5,19 +5,16 @@ body {
   width: 960px;
   margin: auto;
 }
-.thumbnail:hover {
-  transform: scale(1.5,1.5);
-  box-shadow: 10px 10px 91px 0px #222222;
-  z-index:9999;
-  cursor:pointer;
-}
 .thumbnail{
   width: 48px;
   width: 48px;
   animation: 0.8s thumbnailEnter 1 linear; 
 }
-#thumbnails {
-  perspective: 1000px;
+.thumbnail:hover {
+  transform: scale(1.5,1.5);
+  box-shadow: 10px 10px 91px 0px #222222;
+  z-index:9999;
+  cursor:pointer;
 }
 @keyframes thumbnailEnter{
   0%{
@@ -27,7 +24,10 @@ body {
     transform: rotateY(-90deg);
     opacity: 0;
   }
-  100%{ 
+  99% {
+    top: 0px;
+    left: 0px;
+    position: relative;
     transform: rotateY(0deg);
     opacity: 1;
   }

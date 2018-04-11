@@ -33,7 +33,7 @@ function addThumbnail(currentTime) {
   let context = thumbnailCanvas.getContext("2d");
   context.filter = `hue-rotate(${hueVariation}deg)`;
   hueVariation +=1;
-  context.drawImage(video,0,0,400,400,0,0,48,48);
+  context.drawImage(video,280,0,400,400,0,0,48,48);
   
   dataUrl = thumbnailCanvas.toDataURL();
   thumbnailImage = document.createElement('img');
