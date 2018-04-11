@@ -19,9 +19,9 @@ body {
 @keyframes thumbnailEnter{
   0%{
     top: 15px;
-    left: 20px;
+    left: 25px;
     position: relative;
-    transform: rotateY(-90deg);
+    transform: rotateY(-180deg);
     opacity: 0;
   }
   99% {

@@ -1,7 +1,7 @@
 let video = document.getElementById("video");
-let thumbnailsMosaik = document.getElementById("thumbnails");
-let hueVariation = 0;
+let thumbnails = document.getElementById("thumbnails");
 
+let hueVariation = 0;
 let isPlaying = false;
 let maxTime = 0;
 
@@ -11,9 +11,6 @@ video.addEventListener('play', function() {
 video.addEventListener('pause', function() {
   isPlaying = false;
 });
-video.addEventListener('timeupdate', function() {
-
-}, false);
 
 // 23fps = 1 frame every 43.478 sec
 window.setInterval(function() {
@@ -45,5 +42,5 @@ function addThumbnail(currentTime) {
     video.currentTime = currentTime; 
   };
 
-  thumbnailsMosaik.appendChild(thumbnailImage);
+  thumbnails.appendChild(thumbnailImage);
 }
