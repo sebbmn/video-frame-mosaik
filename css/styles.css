@@ -6,11 +6,10 @@ body {
   margin: auto;
 }
 .thumbnail:hover {
-  width:58px;
-  height: 58px;
-  margin: -5px 0 0 -5px;
-  
-  box-shadow: 3px 4px 5px 0 #222222;
+  transform: scale(1.3,1.3);
+  box-shadow: 10px 10px 91px 0px #222222;
+  z-index:9999;
+  cursor:pointer;
 }
 .thumbnail {
   width: 48px;
