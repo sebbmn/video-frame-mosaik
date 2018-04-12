@@ -1,6 +1,6 @@
 # video-frame-mosaik
 Very simple application that create a mosaic of thumbnails: It get the frames from a video in real time and then display them as a mosaic of thumbnails.
-Clicking on a thumbnail move the video to the frame time 
+Clicking on a thumbnail move the video to the frame time.
 This application is built using only standard Javascript/Html/Css.
 
 ## Install
